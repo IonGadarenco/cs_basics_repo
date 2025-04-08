@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Animal rex = new Dog();
+            rex.Name = "Rex";
+            rex.Age = 5;
+            rex.MakeSound();
+            rex.Eat();
+
+            Animal gerge = new Monkey();
+            gerge.Name = "George";
+            gerge.Age = 3;
+            gerge.MakeSound();
+            gerge.Eat();
         }
     }
 }
