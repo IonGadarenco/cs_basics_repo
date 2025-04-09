@@ -30,7 +30,7 @@
                 Console.WriteLine("*********************");
                 animal.MakeSound();
                 animal.Eat();
-                if (animal.hasFoodInfo)
+                if (animal.HasFoodInfo)
                     animal.getFoodInfo(animal);
 
                 var clonedAnimal = animal.Clone() as Animal;

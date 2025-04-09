@@ -11,7 +11,9 @@ namespace cs_basics
         private string _food;
         private decimal _quantity;
         private string _medicines = "nothing";
-        public bool hasFoodInfo = false;
+        private bool _hasFoodInfo = false;
+
+        public bool HasFoodInfo { get => _hasFoodInfo; }
         public string? Name { get; set; }
         public int Age { get; set; }
 
@@ -30,7 +32,7 @@ namespace cs_basics
 
         public void setFeedingInfo(string food, decimal quantity)
         {
-            hasFoodInfo = true;
+            _hasFoodInfo = true;
             _food = food;
             _quantity = quantity;
             Console.WriteLine("Food info is set up!");
@@ -38,7 +40,7 @@ namespace cs_basics
 
         public void setFeedingInfo(string food, decimal quantity, string medicines)
         {
-            hasFoodInfo = true;
+            _hasFoodInfo = true;
             _food = food;
             _quantity = quantity;
             _medicines = medicines;
